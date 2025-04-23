@@ -1,0 +1,23 @@
+{
+  "identifier": {
+    "identifier": "ABC123"
+  },
+  "eventType": "SOME_RECORD_ENRICHED_EVENT",
+  "creationTimestamp": "2024-11-19T22:06:15.296Z",
+  "event": {
+    "eventId": "82724f2a-e146-4c6a-a91d-21d551475a0a",
+    "someRecord": {
+      "identifier": {
+        "identifier": "ABC123"
+      },
+      "Id": {
+        "id": "1234567890"
+      },
+      "TIMESTAMP": "2024-10-10T12:34:34.123Z",
+      "MEASURE": 1000
+    },
+    "creationTimestamp": "",
+    "matches": null,
+    "person": null
+  }
+}
