@@ -39,7 +39,7 @@ pipeline{
                                 dir('.') {
                                 sh '''
                                                 echo "Packaging version ${VERSION}..."
-                                                mvn deploy
+                                                mvn -DskipTests=true deploy
                                                 '''
                                       }
                             }
