@@ -488,6 +488,7 @@
                 <configuration>
                     <forkCount>0</forkCount>
                     <skipITs>true</skipITs>
+
                 </configuration>
                 <executions>
                     <execution>
