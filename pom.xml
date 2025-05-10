@@ -413,7 +413,7 @@
                     <useSystemClassLoader>false</useSystemClassLoader>
                 </configuration>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.3.0</version>
@@ -429,11 +429,11 @@
                         </goals>
                         <configuration>
                             <arguments>
-                                <argument>--file</argument>
+                                <argument>&#45;&#45;file</argument>
                                 <argument>${project.basedir}/src/e2e/docker-compose-local-setup.yml</argument>
                                 <argument>up</argument>
                                 <argument>-d</argument>
-                                <argument>--build</argument>
+                                <argument>&#45;&#45;build</argument>
                             </arguments>
                         </configuration>
                     </execution>
@@ -445,11 +445,11 @@
                         </goals>
                         <configuration>
                             <arguments>
-                                <argument>--file</argument>
+                                <argument>&#45;&#45;file</argument>
                                 <argument>${project.basedir}/src/e2e/docker-compose-local-setup.yml</argument>
                                 <argument>down</argument>
                                 <argument>-v</argument>
-                                <argument>--remove-orphans</argument>
+                                <argument>&#45;&#45;remove-orphans</argument>
                             </arguments>
                         </configuration>
                     </execution>
@@ -487,8 +487,6 @@
                 <version>3.2.5</version>
                 <configuration>
                     <forkCount>0</forkCount>
-                    <skipITs>true</skipITs>
-
                 </configuration>
                 <executions>
                     <execution>
@@ -504,7 +502,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>versions-maven-plugin</artifactId>
