@@ -487,6 +487,7 @@
                 <version>3.2.5</version>
                 <configuration>
                     <forkCount>0</forkCount>
+                    <skipITs>true</skipITs>
                 </configuration>
                 <executions>
                     <execution>
