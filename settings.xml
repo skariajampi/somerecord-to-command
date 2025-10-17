@@ -1,0 +1,41 @@
+<settings>
+    <!--<mirrors>
+        <mirror>
+            <id>central-mirror</id>
+            <name>Maven Central Repository Mirror</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <mirrorOf>*, !confluent</mirrorOf>
+        </mirror>
+    </mirrors>-->
+
+    <profiles>
+        <profile>
+            <id>default-repositories</id>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <url>https://repo.maven.apache.org/maven2</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+                    <repository>
+                        <snapshots>
+                            <enabled>false</enabled>
+                        </snapshots>
+                        <id>confluent</id>
+                        <name>confluent-central</name>
+                        <url>https://packages.confluent.io/maven/</url>
+                    </repository>
+
+            </repositories>
+        </profile>
+    </profiles>
+
+    <activeProfiles>
+        <activeProfile>default-repositories</activeProfile>
+    </activeProfiles>
+</settings>

@@ -16,3 +16,4 @@ src/e2e/conf
 Icon?
 .Trashes
 ._*
+.env
